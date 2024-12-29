@@ -3,28 +3,31 @@ wsl --install
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 $packages = @(
-    # general soft
-    "googlechrome",
-    "winrar",
     # dev soft
     "vscode",
     "visualstudio2022community",
     "git",
     "docker-desktop",
-    "xampp",
+    "sql-server-management-studio"
     "github-desktop",
+
     # communication soft
     "discord",
     "telegram",
+    "chatterino",
+
     # game soft
     "steam",
     "epicgameslauncher",
     "osu",
+
     # other
     "spotify",
     "drawio",
     "flameshot",
-
+    "opera-gx"
+    "googlechrome",
+    "winrar",
 )
 
 foreach ($package in $packages) {
